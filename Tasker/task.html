@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+<body>
+    <div class="overall">
+        <div class="logo">
+      <img src="./tasker.png" alt="">
+    </div>
+
+      <div class="login">
+   <h1> Welcome to tasker</h1>
+
+   <p>Please,insert your information to access your tasks</p> 
+
+    <h2>Email</h2>
+    <input type="email" placeholder="Insert your email" id="email">
+
+   <h2> Password</h2>
+   <input type="password" placeholder="Insert your password" class="border" id="pass">
+
+   <div class="checkBox">
+    <input type="checkbox" id="check">
+    <p> Remember me</p>
+   </div>
+
+     <button onclick="login()">Sign in</button>
+     <p>Don't have an account?<a href="./signup.html">Sign Up</a></p>
+    </div>
+</div>
+
+<script>
+    function login(){
+            var mail=document.getElementById("email").value;
+            var pass=document.getElementById("pass").value;
+            console.log(mail);
+            console.log(pass);
+            if(mail!="" && pass!=""){
+                location.href="task1.html"
+            }
+        }
+</script>
+</body>
+</html>
